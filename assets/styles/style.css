@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+#auth {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(rgba(110, 125, 145, 0.8), rgba(19, 20, 22, 0.8)), url(https://wotpack.ru/wp-content/uploads/2022/04/dottoreobl.jpg);
+      background-size: cover;
+      height: 100vh;
+}
+
+#auth form {
+      width: 35%;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      background: rgba(125, 195, 216, 0.349);
+      padding: 30px;
+      border-radius: 15px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+/* я начал отсудова */
+#auth form h1 {
+      text-align: center;
+}
+
+#auth form input {
+      margin-top: 10px;
+      background: rgb(220, 245, 250);
+}
+
+#auth form label {
+      margin-top: 30px;
+}
+
+#auth form button {
+      transition: 1s;
+      margin-top: 30px;
+      width: 50%;
+      align-self: center;
+      background: rgb(40, 70, 95);
+      color: white;
+}
+
+#auth form button:hover {
+      transition: .5s;
+      background: rgb(50, 87, 117);
+      box-shadow: 0 0 20px rgba(120, 179, 179, 0.885);
+      transform: scale(1.1)
+}
+
+#auth form button,
+form input {
+      padding: 10px;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+}
+
+#home_page {
+      font-family: 'Montserrat', sans-serif;
+}
+
+#home_page .section-header {
+      background:
+            linear-gradient(rgba(171, 201, 230, 0.8), #ceb96dcc),
+            url(https://wotpack.ru/wp-content/uploads/2022/04/IMG_8450.jpg);
+      background-size: cover;
+      /* ↓↓↓ потом надо убрать ↓↓↓ */
+}
+
+.container {
+      margin: 0 auto;
+      width: 1200px;
+}
+
+#home_page .section-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+#home_page .section-header .container .menu {
+      display: flex;
+      justify-content: end;
+      padding: 20px 0;
+}
+
+#home_page .section-header .container .menu a {
+      /* здесь был padding  - надо убрать его*/
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+}
+
+#home_page .section-header .container .menu .item {
+      margin-left: 20px;
+}
+
+#home_page .section-header .container .menu a::after {
+      transition: 1s;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 3px;
+      /* background: rgb(255, 185, 56);  */
+      margin-top: 5px;
+      background: rgba(255, 255, 255, 0);
+}
+
+#home_page .section-header .container .menu .item:hover a::after {
+      transition: .5s;
+      margin-top: 5px;
+      background: rgb(76, 84, 131);
+}
+
+#home_page .section-header .container .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: 700;
+}
+
+#home_page .section-header .container:nth-child(2) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+}
+
+#home_page .section-header .container:nth-child(2) h2 {
+      font-family: Kaushan Script, sans-serif;
+      font-size: 4.5rem;
+      margin-top: 170px;
+      font-weight: 400;
+}
+
+#home_page .section-header .container:nth-child(2) h1 {
+      font-family: Montserrat, sans-serif;
+      font-size: 9.375rem;
+      margin-top: 65px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: -5px;
+      line-height: 140px;
+}
+
+#home_page .section-header .container:nth-child(2) .line {
+      margin-top: 40px;
+      width: 20%;
+      height: 4px;
+      background-color: #fff;
+}
+
+#home_page .section-header .container:nth-child(2) .button {
+      transition: 1s;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 0.875rem;
+      font-family: Montserrat, sans-serif;
+      text-decoration: none;
+      border: 4px solid #fff;
+      text-transform: uppercase;
+      margin-top: 40px;
+      font-weight: 700;
+}
+
+#home_page .section-header .container:nth-child(2) .button:hover {
+      transition: .5s;
+      color: rgb(104, 128, 180);
+      border: 4px solid rgb(104, 128, 180);
+}
+
+.row {
+      display: flex;
+      width: 100%;
+}
+
+#home_page .section-header .container:nth-child(3) {
+      color: white;
+      font-family: Montserrat, sans-serif;
+}
+
+#home_page .section-header .container:nth-child(3) .row {
+      margin-top: 100px;
+      justify-content: space-between;
+      padding-bottom: 20px;
+}
+
+#home_page .section-header .container:nth-child(3) .row .col-3 {
+      width: 23%;
+}
+
+#home_page .section-header .container:nth-child(3) .row .col-3 .line {
+      width: 100%;
+      height: 4px;
+      background-color: #fff;
+}
+
+#home_page .section-header .container:nth-child(3) .row .col-3 .text {
+      display: flex;
+      align-items: baseline;
+}
+
+#home_page .section-header .container:nth-child(3) .row .col-3 .text h2 {
+      margin-right: 10px;
+      font-size: 2rem;
+}
+
+#home_page .section-header .container:nth-child(3) .row .col-3 .text h3 {
+      font-size: 1.5rem;
+}
+
+#home_page .section-header .container:nth-child(3) .row .col-3 .line::after {
+      transition: 2s;
+      display: block;
+      content: "";
+      width: 20%;
+      height: 4px;
+      background-color: #6a80c7;
+}
+
+#home_page .section-header .container:nth-child(3) .row .col-3:hover .line::after {
+      transition: .5s;
+      width: 100%;
+}
+
+.script{
+      font-family: 'kaushan script', serif;
+}
+
+.title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 10%;
+      margin: 120px;
+}
+.title h2, .title h3{
+      font-weight: 500;
+      color: #333;
+      font-size: 1.5rem;
+}
+.title h2{
+      text-transform: uppercase;
+      margin: 30px 0 60px 0;
+      font-size: 1.9rem;
+}
+.title .line{
+      height: 3px;
+      width: 60px;
+      background-color: rgb(71, 80, 134);
+}
+.title p{
+      margin-top: 45px;
+      font-size: 0.9rem;
+      color: #999;
+}
+.row{
+      display: flex;
+}
+#home_page .section-about .back{
+      width: 30%;
+      height: 250px;
+      background-color: rgb(127, 177, 218);
+}
+#home_page .section-about .row{
+      justify-content: space-between;
+}
+#home_page .section-about .back:nth-child(1) .image{
+      background: url(https://64.media.tumblr.com/449caec0b643dc073efa7b22ccb216fa/dc4bc6369213f257-44/s500x750/132e07b9f67a6d7b3f8a576e20caf59c2bbf209c.png);
+      background-size: cover;
+}
+#home_page .section-about .back:nth-child(2) .image{
+      background: url(https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1430&q=80);
+      background-size: cover;
+}
+#home_page .section-about .back:nth-child(3) .image{
+      background: url(https://www.cidrap.umn.edu/sites/default/files/styles/article_detail/public/images/news/iv_bags.jpg?itok=6SbiTF27);
+      background-size: cover;
+}
+#home_page .section-about .image{
+      transition: .7s;
+      height: 100%;
+      width: 100%;
+}
+#home_page .section-about .filter{
+      transition: .7s;
+      opacity: 0;
+      height: 100%;
+      background: linear-gradient(rgba(81, 112, 129, 0.664), rgba(134, 109, 179, 0.678));
+      color: white;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+#home_page .section-about .filter i{
+      margin-bottom: 10px;
+}
+
+#home_page .section-about .back:hover .image{
+      transition: .5s;
+      margin-top: -20px;
+      margin-left: -20px;
+}
+#home_page .section-about .back:hover .filter{
+      transition: .5s;
+      opacity: 1;
+}
+
+#home_page .section-stats{
+      background-color:rgb(127, 177, 218);
+      margin-top: 135px;
+}
+
+#home_page .section-stats .item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+      padding: 60px 0;
+      color: #fff;
+      border-left: 2px solid rgb(101, 140, 172);
+}
+#home_page .section-stats .item:nth-child(5){
+      border-right: 2px solid rgb(101, 140, 172);
+}
+
+#home_page .section-stats h2{
+      margin-bottom: 10px;
+      font-size: 4rem;
+      font-weight: 700;
+}
+
+#home_page .section-stats h3{
+      font-size: 1.7rem;
+      font-weight: 500;
+}
+
+#home_page .service-grid{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+}
+
+#home_page .service-grid .item{
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-between;
+}
+
+#home_page .service-grid .hr{
+      background-color: rgb(101, 140, 172);
+      height: 2px;
+      width: 100%;
+      margin: 60px 0;
+}
+
+#home_page .service-grid .item i{
+      width: 10%;
+      height: 100%;
+      text-align: end;
+      font-size: 30px;
+      color: #6a80c7;
+}
+
+#home_page .service-grid .item h2,
+#home_page .service-grid .item p{
+      width: 85%;
+      color: rgb(118, 118, 119);
+}
+
+#home_page .service-grid .item h2{
+      margin-bottom: 10px;
+      font-weight: 30%;
+}
+
+#home_page .section-slider .container{
+      overflow: hidden;
+}
+
+#home_page .section-slider .slider-inner{
+      display: flex;
+      width: 300%;
+}
+
+@keyframes slider_animation{
+      0%, 20%{
+            transform: translateX(0);
+      }
+      40%, 60%{
+            transform: translateX(-100%);
+      }
+      80%, 100%{
+            transform: translateX(-200%);
+      }
+}
+
+#home_page .section-slider .slide{
+      width: calc(100%/3);
+      display: flex;
+      animation: slider_animation 10s alternate ease-in-out infinite;
+}
+
+#home_page .section-slider .slide .txt{
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1.5rem;
+      padding: 30px;
+      width: 80%;
+}
+
+#home_page .section-slider .slide .author{
+      font-style: italic;
+      font-weight: 500;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+}
+
+#home_page .section-slider .slide .author .line{
+      width: 60px;
+      height: 3px;
+      background-color: rgb(38, 69, 110);
+      margin-right: 20px;
+}
+
+#home_page .section-slider .slide .icon{
+      width: 20%;
+      height: 100%;
+      padding: 2%;
+}
+
+#home_page .section-slider .slide .icon img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      border: rgb(34, 38, 63) solid 2px;
+}
+
+#home_page .section-team .row{
+      justify-content: space-between;
+}
+
+#home_page .section-team .col-4{
+      width: 30%;
+      height: 470px;
+}
+
+#home_page .section-team .col-4 .background{
+      background-color: rgb(101, 140, 172);
+      height: 100%;
+}
+
+#home_page .section-team .col-4 .background .image{
+      height: 100%;
+      background-size: cover;
+      transition: .5s;
+}
+
+#home_page .section-team .col-4:nth-child(1) .background .image{
+      background-image: url('https://kartinkin.net/uploads/posts/2022-10/1665524647_5-kartinkin-net-p-dottore-genshin-art-oboi-8.jpg');
+      background-position: -200px 0;
+}
+
+#home_page .section-team .col-4:nth-child(2) .background .image{
+      background-image: url('https://sun9-61.userapi.com/impg/jXIsosOHJ2m5XQTLwXN214DBYU-pqOFSgEO29A/h3IcSjo6nzM.jpg?size=410x604&quality=96&sign=6fa09ba10444759e0381cd52f3082806&type=album');
+}
+
+#home_page .section-team .col-4:nth-child(3) .background .image{
+      background-image: url('https://i.pinimg.com/originals/fc/44/6c/fc446cd2ace20e8bfd72ee57ab50108a.jpg');
+}
+
+#home_page .section-team .col-4 .foreground{
+      background: linear-gradient(rgba(81, 112, 129, 0.726), rgba(134, 109, 179, 0.521)) ;
+      height: 100%;
+      opacity: 0;
+}
+
+#home_page .section-team .col-4:hover .image{
+      transition: 1s;
+      transform: translate(-10px, -10px);
+}
+
+#home_page .section-team .col-4:hover .foreground{
+      transition: 1s;
+      opacity: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#home_page .section-team .icons{
+      display: flex;
+      height: 56px;
+      overflow: hidden;
+}
+
+#home_page .section-team .icons .down,
+#home_page .section-team .icons .up{
+      transition: 1s;
+      width: 56px;
+      height: 56px;
+      background-color: #242d49;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #6a80c7;
+      font-size: 1.5rem;
+}
+
+#home_page .section-team .item:hover .down,
+#home_page .section-team .item:hover .up{
+      transition: 1s;
+      transform: translateY(-100%);
+      background-color:  #3a4974;
+}
+
+#home_page .section-team .item:hover .down{
+      color: #b5bace;
+}
+
+#home_page .section-grid .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-rows: 40vh;
+}
+
+#home_page .section-grid .item{
+      background-size: cover;
+}
+
+#home_page .section-grid .item:nth-child(1){
+      background-image: url(https://www.symbeohealth.com/wp-content/uploads/2021/01/pexels-sandy-torchon-4094199.jpg);
+      background-position: -40px 0;
+}
+
+#home_page .section-grid .item:nth-child(2){
+      background-image: url(https://staticsnews.medsblalabs.com/news-en/wp-content/uploads/2019/04/Aerospace-Medicine-Market.jpg);
+}
+
+#home_page .section-grid .item:nth-child(3){
+      background-image: url(https://temp78.ru/img/lmo.jpg);
+}
+
+#home_page .section-grid .item:nth-child(4){
+      background-image: url(https://sun9-26.userapi.com/impg/55uX5jYB-MstWmKYGbzUg6qcY4GaFXHmjriW1g/0Tq7xhSAPI4.jpg?size=1280x1280&quality=96&sign=049e14a59658b4be526e8004594c2f01&c_uniq_tag=NQB3DVLgw57vZCMnKp3SibHC6Mz0KVR79Kx91rIi67c&type=album);
+      background-position: 0 -50px;
+}
+
+#home_page .section-grid .item:nth-child(5){
+      background-image: url(https://i.ytimg.com/vi/KTmDvQchk0U/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEIgQihlMA8=&rs=AOn4CLAWq7vmz1Z_s0UK0a8bTGSiImCudw);
+      background-position: -40px 0;
+}
+
+#home_page .section-grid .item:nth-child(6){
+      background-image: url(https://wallup.net/wp-content/uploads/2019/09/30814-dark-horror-gothic-drugs-mood-sad-sorrow-addiction-needle-syringe-women-selective.jpg);
+}
+
+#home_page .section-grid .item:nth-child(7){
+      background-image: url(https://static11.tgcnt.ru/posts/_0/29/29d26726dd269569250e2633ad23c6a0.jpg);
+      background-position: -40px 0;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 3;
+}
+
+#home_page .section-grid .foreground{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      color: white;
+      
+      opacity: 0;
+      background-image: linear-gradient(#517081b9, #866db385);
+      transition: 1s;
+}
+
+#home_page .section-grid .item:hover .foreground{
+      transition: .5s;
+      opacity: 1;
+}
+
+
+
+#home_page .comments-grid{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+}
+
+#home_page .comments-grid .item{
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-between;
+}
+#home_page .comments-grid .item .height{
+      height: 100%;
+}
+#home_page .comments-grid .item img{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: end;
+      font-size: 30px;
+      color: #6a80c7;
+}
+
+#home_page .comments-grid .item h2,
+#home_page .comments-grid .item p{
+      width: 85%;
+      color: rgb(118, 118, 119);
+}
+
+#home_page .comments-grid .item h2{
+      margin-bottom: 10px;
+      font-weight: 30%;
+}
+
+#home_page .section-comments .line{
+      width: 60px;
+      height: 3px;
+      background-color: rgb(38, 69, 110);
+      margin-right: 20px;
+      margin-bottom: 10px;
+}
